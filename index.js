@@ -18,9 +18,9 @@ app.get("/", function(req, res) {
   res.send("Hello world!");
 });
 
-const subTxtPath = path.join(FILE_PATH, 'log.txt');
+const logTxtPath = path.join(FILE_PATH, 'log.txt');
 app.get("/log", (req, res) => {
-  fs.readFile(subTxtPath, "utf8", (err, data) => {
+  fs.readFile(logTxtPath, "utf8", (err, data) => {
     if (err) {
       console.error(err);
       res.status(500).send("Error reading log.txt");
